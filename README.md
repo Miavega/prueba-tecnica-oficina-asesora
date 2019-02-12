@@ -43,5 +43,5 @@ _Herramientas_
 
 ## Autor ✒️
 
-* **Miguel Angel Vega Alonso - *Trabajo Inicial* - [Miavega](https://github.com/Miavega)
+* Miguel Angel Vega Alonso - [Miavega](https://github.com/Miavega)
 
