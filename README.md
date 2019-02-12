@@ -1,4 +1,4 @@
-# prueba-técnica-oficina-asesora-de-sistemas
+# Prueba Técnica Oficina Asesora de Sistemas
 
 Prueba Tecnica de un CRUD de registro de actividades
 
@@ -17,8 +17,6 @@ Docker versión 3.3
 
 ### Instalación 🔧
 
-_Una serie de ejemplos paso a paso que te dice lo que debes ejecutar para tener un entorno de desarrollo ejecutandose_
-
 _Construir la imagen de Docker Compose_
 
 ```
@@ -32,8 +30,7 @@ docker-compose up
 ```
 
 _El servidor se ejecuta en el puerto 3000_
-
-## Ejecutando las pruebas ⚙️
+_http://localhost:3000/_
 
 ## Construido con 🛠️
 
