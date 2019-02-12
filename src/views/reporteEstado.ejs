@@ -1,0 +1,72 @@
+<% include partials/_header %>
+
+<!-- TAREAS REALIZADAS POR ESTADO -->
+<h1 class="text-center">TAREAS REALIZADAS</h1>
+<div class="container">
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>Descripción</th>
+                <th>Fecha Registro</th>
+                <th>Fecha Límite</th>
+                <th>Responsable</th>
+                <th>Soporte</th>
+                <th>Estado</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% for(let i = 0; i < tareas.length; i++) { 
+                if(tareas[i].estado) {%>
+            <tr>
+                <td><%= tareas[i].descripcion %> </td>
+                <td><%= tareas[i].fecha_registro %> </td>
+                <td><%= tareas[i].fecha_limite %> </td>
+                <% for(let j = 0; j < responsables.length; j++) {
+                        if(tareas[i].responsable == responsables[j]._id) { %>
+                <td><%= responsables[j].nombre %> </td>
+                <% }
+                    } %>
+                <td><%= tareas[i].soporte %> </td>
+                <td>Realizada</td>
+            </tr>
+            <% }
+         } %>
+        </tbody>
+    </table>
+
+    <!-- TAREAS SIN REALIZAR POR ESTADO -->
+
+    <h1 class="text-center">TAREAS PENDIENTES</h1>
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>Descripción</th>
+                <th>Fecha Registro</th>
+                <th>Fecha Límite</th>
+                <th>Responsable</th>
+                <th>Soporte</th>
+                <th>Estado</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% for(let i = 0; i < tareas.length; i++) { 
+                    if(!tareas[i].estado) {%>
+            <tr>
+                <td><%= tareas[i].descripcion %> </td>
+                <td><%= tareas[i].fecha_registro %> </td>
+                <td><%= tareas[i].fecha_limite %> </td>
+                <% for(let j = 0; j < responsables.length; j++) {
+                            if(tareas[i].responsable == responsables[j]._id) { %>
+                <td><%= responsables[j].nombre %> </td>
+                <% }
+                        } %>
+                <td><%= tareas[i].soporte %> </td>
+                <td>Pendiente</td>
+            </tr>
+            <% }
+             } %>
+        </tbody>
+    </table>
+</div>
+
+<% include partials/_footer %>

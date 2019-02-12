@@ -1,0 +1,53 @@
+<% include partials/_header %>
+
+<div class="container">
+    <div class="row">
+        <!-- FORMULARIO -->
+        <div class="col-md-5">
+            <div class="card">
+                <div class="card-header">
+                    Responsable
+                </div>
+                <div class="card-body">
+                    <form action="/crearResponsable" method="POST">
+                        <div class="form-group">
+                            <input type="text" name="nombre" placeholder="Nombre" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="correo" placeholder="Correo" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="telefono" placeholder="Telefono" class="form-control" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">
+                            Añadir
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- LISTA -->
+        <div class="col-md-7">
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Correo</th>
+                        <th>Teléfono</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% for(let i = 0; i < responsables.length; i++){ %>
+                    <tr>
+                        <td><%= responsables[i].nombre %> </td>
+                        <td><%= responsables[i].correo %> </td>
+                        <td><%= responsables[i].telefono %> </td>
+                    </tr>
+                    <% } %>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<% include partials/_footer %>
