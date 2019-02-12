@@ -6,8 +6,6 @@ Prueba Tecnica de un CRUD de registro de actividades
 
 _Instrucciones para obtener una copia del proyecto en funcionamiento en una máquina local para propósitos de desarrollo y pruebas._
 
-Mirar **Deployment** para conocer como desplegar el proyecto.
-
 
 ### Pre-requisitos 📋
 
