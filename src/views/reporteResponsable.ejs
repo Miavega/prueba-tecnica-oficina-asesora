@@ -5,20 +5,20 @@
     <h1 class="text-center mb-4">TAREAS REALIZADAS POR RESPONSABLE</h1>
     <div class="row mb-4">
         <form action="/buscarReporteResponsable" method="POST">
-            <div class="two-cols">
-                <div class="col">
+
+                <div class="col-sm">
                     <select class="form-control" name="responsable" id="responsable" required>
                         <% for(let i = 0; i < responsables.length; i++) { %>
                         <option id="<%=responsables[i]._id%>"><%=responsables[i].nombre%></option>
                         <% } %>
                     </select>
                 </div>
-                <div class="col">
+                <div class="col-sm">
                     <button type="submit" class="btn btn-primary btn-block">
                         Buscar
                     </button>
                 </div>
-            </div>
+
         </form>
     </div>
 </div>
