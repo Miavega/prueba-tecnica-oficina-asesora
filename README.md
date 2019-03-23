@@ -36,7 +36,7 @@ _http://localhost:3000/_
 
 _Herramientas_
 
-* [Express](https://expressjs.com/es/) - Frameworkd para la creación de servidores
+* [Express](https://expressjs.com/es/) - Framework para la creación de servidores
 * [Mongoose](https://mongoosejs.com/) - Mapeador ODM para MongoDB
 * [ejs](https://ejs.co/) - Motor de plantillas
 * [morgan](https://www.npmjs.com/package/morgan) - Detalles de solicitudes
